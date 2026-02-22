@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Vishal</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="index.html" class="nav-logo">vishal<span>.</span>dev</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE NAV -->
+  <ul class="mobile-nav" id="mobileNav">
+    <li><a href="index.html" onclick="closeMenu()">Home</a></li>
+    <li><a href="about.html" onclick="closeMenu()">About</a></li>
+    <li><a href="contact.html" onclick="closeMenu()">Contact</a></li>
+  </ul>
+
+  <main>
+
+    <!-- ABOUT HERO -->
+    <section class="about-hero">
+      <div class="container">
+        <p class="section-label">About Me</p>
+        <div class="about-grid">
+
+          <div class="about-photo-wrap">
+            <div class="about-photo">👤</div>
+            <div class="about-accent-box">
+              <strong>3rd</strong>
+              <span>Year B.Tech<br/>Student</span>
+            </div>
+          </div>
+
+          <div class="about-content">
+            <h1>Learning, building,<br/>growing every day</h1>
+            <p class="lead">
+              I'm Vishal — a Computer Science student at Savitribai Phule Pune University (SPPU), Pune. I have a deep passion for building functional, beautiful digital experiences and am constantly growing my skills through projects and learning.
+            </p>
+            <p>
+              My journey at SPPU has given me a strong foundation in software engineering, data structures, and web technologies. What truly drives me is the intersection of engineering and design — building things that are not just functional but delightful to use.
+            </p>
+            <p>
+              When I'm not studying or coding, you'll find me exploring new frameworks, working on personal projects, and participating in hackathons. Always learning, always building.
+            </p>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+              <a href="contact.html" class="btn btn-primary">Get in touch</a>
+              <a href="#experience" class="btn btn-ghost">See my journey</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE TIMELINE -->
+    <section class="timeline-section" id="experience">
+      <div class="container">
+        <p class="section-label">Education & Experience</p>
+        <h2>My Journey at SPPU</h2>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <p class="timeline-year">2023 – Present</p>
+            <h3>Senior Full-Stack Developer</h3>
+            <p class="company">TechForge Labs · San Francisco, CA</p>
+            <p>Lead development of microservices architecture serving 500K+ users. Mentor junior developers and drive technical direction for new product lines.</p>
+          </div>
+
+          <div class="timeline-item">
+            <p class="timeline-year">2021 – 2023</p>
+            <h3>Mid-Level Software Engineer</h3>
+            <p class="company">InnovateCo · Remote</p>
+            <p>Built real-time collaboration features for a SaaS platform. Reduced API response times by 60% through caching and query optimization.</p>
+          </div>
+
+          <div class="timeline-item">
+            <p class="timeline-year">2020 – 2021</p>
+            <h3>Junior Frontend Developer</h3>
+            <p class="company">PixelCraft Agency · Austin, TX</p>
+            <p>Developed responsive web applications for 20+ clients across e-commerce, healthcare, and fintech verticals.</p>
+          </div>
+
+          <div class="timeline-item">
+            <p class="timeline-year">2016 – 2020</p>
+            <h3>B.S. Computer Science</h3>
+            <p class="company">University of Texas · Austin, TX</p>
+            <p>Graduated with honors. Focused on software engineering and HCI. Led the university's web development club for two years.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- VALUES -->
+    <section class="values-section">
+      <div class="container">
+        <p class="section-label">Philosophy</p>
+        <h2>What I stand for</h2>
+
+        <div class="values-grid">
+          <div class="value-card">
+            <span class="value-icon">🎯</span>
+            <h3>User-First Thinking</h3>
+            <p>Every decision starts with the user. I obsess over usability, accessibility, and delight — because great software should feel effortless.</p>
+          </div>
+
+          <div class="value-card">
+            <span class="value-icon">⚡</span>
+            <h3>Performance Matters</h3>
+            <p>Speed is a feature. I build with performance in mind from day one — optimizing load times, memory, and scalability without compromise.</p>
+          </div>
+
+          <div class="value-card">
+            <span class="value-icon">🔍</span>
+            <h3>Clean Code</h3>
+            <p>I write code that future developers (including myself) will actually enjoy reading. Clear, tested, and documented by default.</p>
+          </div>
+
+          <div class="value-card">
+            <span class="value-icon">🌱</span>
+            <h3>Continuous Growth</h3>
+            <p>Technology evolves fast and so do I. I dedicate time weekly to learning new tools, patterns, and paradigms to stay ahead of the curve.</p>
+          </div>
+
+          <div class="value-card">
+            <span class="value-icon">🤝</span>
+            <h3>Collaboration</h3>
+            <p>The best products are built by diverse teams. I thrive in environments where open communication and mutual respect drive progress.</p>
+          </div>
+
+          <div class="value-card">
+            <span class="value-icon">🚀</span>
+            <h3>Shipping Mindset</h3>
+            <p>I value working software over perfect theory. Iterate fast, gather feedback, and refine — that's how great products get built.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Vishal. All rights reserved.</p>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileNav.classList.toggle('open');
+      document.body.style.overflow = mobileNav.classList.contains('open') ? 'hidden' : '';
+    });
+
+    function closeMenu() {
+      hamburger.classList.remove('open');
+      mobileNav.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Vishal</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="index.html" class="nav-logo">vishal<span>.</span>dev</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE NAV -->
+  <ul class="mobile-nav" id="mobileNav">
+    <li><a href="index.html" onclick="closeMenu()">Home</a></li>
+    <li><a href="about.html" onclick="closeMenu()">About</a></li>
+    <li><a href="contact.html" onclick="closeMenu()">Contact</a></li>
+  </ul>
+
+  <main>
+
+    <!-- CONTACT HERO -->
+    <section class="contact-hero">
+      <div class="container">
+        <p class="section-label">Get In Touch</p>
+        <h1>Let's build<br/>something <em style="color: var(--accent); font-style:normal;">great.</em></h1>
+        <p class="subtitle">
+          I'm a CS student at Savitribai Phule Pune University looking to collaborate, learn, and grow. Feel free to reach out for projects, internships, or just a chat!
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACT LAYOUT -->
+    <div class="container">
+      <div class="contact-layout">
+
+        <!-- LEFT: Info -->
+        <div class="contact-info">
+          <h2>Let's connect</h2>
+          <p>Whether you're looking for a developer for your next project, want to collaborate, or just want to talk tech — my inbox is always open.</p>
+
+          <div class="contact-channels">
+            <a href="/cdn-cgi/l/email-protection#82e3eee7fac2e7fae3eff2eee7ace1edef" class="channel-item">
+              <div class="channel-icon">✉️</div>
+              <div>
+                <strong>Email</strong>
+                <span><span class="__cf_email__" data-cfemail="12737e776a52776a737f627e773c717d7f">[email&#160;protected]</span></span>
+              </div>
+            </a>
+
+            <a href="https://linkedin.com" target="_blank" class="channel-item">
+              <div class="channel-icon">💼</div>
+              <div>
+                <strong>LinkedIn</strong>
+                <span>linkedin.com/in/vishal</span>
+              </div>
+            </a>
+
+            <a href="https://github.com" target="_blank" class="channel-item">
+              <div class="channel-icon">🐙</div>
+              <div>
+                <strong>GitHub</strong>
+                <span>github.com/vishal</span>
+              </div>
+            </a>
+
+            <a href="https://twitter.com" target="_blank" class="channel-item">
+              <div class="channel-icon">🐦</div>
+              <div>
+                <strong>Twitter / X</strong>
+                <span>@vishaldev</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Availability note -->
+          <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem;">
+            <div style="display: flex; gap: 0.75rem; align-items: flex-start;">
+              <div style="width:10px; height:10px; border-radius:50%; background: var(--accent); margin-top:5px; flex-shrink:0; animation: pulse 2s infinite;"></div>
+              <div>
+                <p style="font-weight:500; margin-bottom:0.25rem; color:var(--text);">Open to Opportunities</p>
+                <p style="font-size:0.8rem; color:var(--text-muted);">I'm open to internships, college projects, open-source collaborations, and learning opportunities. Let's connect!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: Form -->
+        <div class="contact-form-wrap" id="formWrap">
+          <h2>Send a message</h2>
+          <p>Fill out the form and I'll get back to you as soon as possible.</p>
+
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Jane" required />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Doe" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="jane@company.com" required />
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject">
+                <option value="">— Select a topic —</option>
+                <option value="project">New Project Inquiry</option>
+                <option value="freelance">Freelance Work</option>
+                <option value="job">Job Opportunity</option>
+                <option value="collab">Collaboration</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell me about your project or idea..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary form-submit">
+              Send Message ✈️
+            </button>
+          </form>
+
+          <!-- Success state -->
+          <div class="success-message" id="successMsg">
+            <span class="icon">✅</span>
+            <h3>Message sent!</h3>
+            <p>Thanks for reaching out. I'll review your message and get back to you within 24 hours.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Vishal. All rights reserved.</p>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </footer>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    // Mobile nav
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileNav.classList.toggle('open');
+      document.body.style.overflow = mobileNav.classList.contains('open') ? 'hidden' : '';
+    });
+
+    function closeMenu() {
+      hamburger.classList.remove('open');
+      mobileNav.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    // Form submit simulation
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const firstName = document.getElementById('firstName').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      if (!firstName || !email || !message) {
+        alert('Please fill in all required fields.');
+        return;
+      }
+
+      // Simulate sending
+      const btn = this.querySelector('button[type="submit"]');
+      btn.textC

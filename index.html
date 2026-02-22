@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vishal — Portfolio</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="index.html" class="nav-logo">vishal<span>.</span>dev</a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE NAV -->
+  <ul class="mobile-nav" id="mobileNav">
+    <li><a href="index.html" onclick="closeMenu()">Home</a></li>
+    <li><a href="about.html" onclick="closeMenu()">About</a></li>
+    <li><a href="contact.html" onclick="closeMenu()">Contact</a></li>
+  </ul>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-grid">
+
+          <div class="hero-content">
+            <div class="hero-badge">CS Student · SPPU Pune</div>
+            <h1>
+              Creative<br/>
+              <em>Full-Stack</em><br/>
+              Developer
+            </h1>
+            <p class="hero-subtitle">
+              I am a Computer Science student at Savitribai Phule Pune University, passionate about building creative digital solutions and growing as a developer.
+            </p>
+            <div class="hero-actions">
+              <a href="contact.html" class="btn btn-primary">View My Projects →</a>
+              <a href="about.html" class="btn btn-ghost">View my story</a>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="hero-card">
+              <div class="hero-avatar">V</div>
+              <h3>Vishal</h3>
+              <p>CS Student at Savitribai Phule Pune University</p>
+              <div class="hero-stats">
+                <div class="stat-item">
+                  <strong>3rd</strong>
+                  <span>Year B.Tech</span>
+                </div>
+                <div class="stat-item">
+                  <strong>30+</strong>
+                  <span>Projects</span>
+                </div>
+                <div class="stat-item">
+                  <strong>SPPU</strong>
+                  <span>University</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects-section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="section-label">Portfolio</p>
+            <h2>Selected Work</h2>
+          </div>
+          <a href="contact.html" class="btn btn-ghost">Contact Me</a>
+        </div>
+
+        <div class="projects">
+          <div class="project-card">
+            <span class="project-icon">🛒</span>
+            <h3>ShopFlow E-Commerce</h3>
+            <p>Full-featured e-commerce platform with real-time inventory management, Stripe payments, and a custom admin dashboard.</p>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">PostgreSQL</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <span class="project-icon">📊</span>
+            <h3>AnalyticsPro Dashboard</h3>
+            <p>Real-time analytics platform processing 1M+ events/day. Built with D3.js visualizations and WebSocket streaming.</p>
+            <div class="project-tags">
+              <span class="tag">Vue.js</span>
+              <span class="tag">Python</span>
+              <span class="tag">Redis</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <span class="project-icon">🏥</span>
+            <h3>HealthSync App</h3>
+            <p>HIPAA-compliant patient management system with telemedicine features and AI-powered symptom tracking.</p>
+            <div class="project-tags">
+              <span class="tag">React Native</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">AWS</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <span class="project-icon">🤖</span>
+            <h3>AI Content Studio</h3>
+            <p>Browser extension + web app that uses LLMs to help content creators draft, edit, and optimize posts across platforms.</p>
+            <div class="project-tags">
+              <span class="tag">TypeScript</span>
+              <span class="tag">OpenAI API</span>
+              <span class="tag">Chrome Ext.</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <span class="project-icon">🗺️</span>
+            <h3>TripForge Travel Planner</h3>
+            <p>Collaborative trip planning app with live maps, expense splitting, and offline PWA support for travelers.</p>
+            <div class="project-tags">
+              <span class="tag">Next.js</span>
+              <span class="tag">Mapbox</span>
+              <span class="tag">Supabase</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <span class="project-icon">💬</span>
+            <h3>TeamChat Messaging</h3>
+            <p>Slack-inspired real-time messaging platform with threaded conversations, file sharing, and GitHub integration.</p>
+            <div class="project-tags">
+              <span class="tag">Socket.io</span>
+              <span class="tag">MongoDB</span>
+              <span class="tag">Docker</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills-section">
+      <div class="container">
+        <p class="section-label">Expertise</p>
+        <h2>Tools & Technologies</h2>
+
+        <div class="skills-grid">
+          <div class="skill-chip"><span>⚛️</span>React</div>
+          <div class="skill-chip"><span>🟨</span>JavaScript</div>
+          <div class="skill-chip"><span>🔷</span>TypeScript</div>
+          <div class="skill-chip"><span>🐍</span>Python</div>
+          <div class="skill-chip"><span>🟩</span>Node.js</div>
+          <div class="skill-chip"><span>🗄️</span>PostgreSQL</div>
+          <div class="skill-chip"><span>🍃</span>MongoDB</div>
+          <div class="skill-chip"><span>☁️</span>AWS</div>
+          <div class="skill-chip"><span>🐳</span>Docker</div>
+          <div class="skill-chip"><span>🎨</span>Figma</div>
+          <div class="skill-chip"><span>▲</span>Next.js</div>
+          <div class="skill-chip"><span>🔥</span>Firebase</div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Vishal. All rights reserved.</p>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileNav.classList.toggle('open');
+      document.body.style.overflow = mobileNav.classList.contains('open') ? 'hidden' : '';
+    });
+
+    function closeMenu() {
+      hamburger.classList.remove('open');
+      mobileNav.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+  </script>
+
+</body>
+</html>
